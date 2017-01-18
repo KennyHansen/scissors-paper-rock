@@ -6,24 +6,25 @@
     <title>Scissors Paper Rock!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
     <!--Might be good to link bootstrap here-->
 </head>
 
 <body>
     <!--write html below this line-->
-    <div class="container">
+    <div class="container-fluid background">
         <div class="row">
             <div class="col-md-6">
                 <div style="text-align:center; margin:10% auto">
                     <button class="btn btn-primary" onclick="play('rock')">Rock</button>
                     <button class="btn btn-primary" onclick="play('paper')">Paper</button>
                     <button class="btn btn-primary" onclick="play('scissors')">Scissors</button>
+                    <button class="btn btn-danger" onclick="play('dynamite')">Dynamite</button>
                     <h1 id="message-display">What do you choose?</h1>
                 </div>
             </div>
             <div class="col-md-6">
-                <div style="text-align:right; margin:10% auto">
+                <div style="text-align:right; margin:15% auto">
                     <h2>Player Wins: <a id="player-record"> 0</a></h2>
                     <h2>Computer Wins: <a id="computer-record"> 0</a></h2>
                     <h2>Player Win Percentage: <a id="win-percent"> 0</a>%</h2>
