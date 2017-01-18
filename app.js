@@ -17,7 +17,6 @@ function play(choice) {
         displayMessage('Computer has chosen ' + computerChoice)
 
         findWinner(choice, computerChoice)
-
     } else {
         displayMessage(choice + ' is not a valid choice')
     }
